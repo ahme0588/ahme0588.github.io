@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Faraz's Coffee Shop - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
@@ -16,8 +18,8 @@
         <nav>
 
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="Contact.html" class="current">Contact Us</a></li>
             </ul>
         </nav>
             
@@ -25,7 +27,7 @@
     <!-- Starting the main content -->
     <main>
         <!-- adding an on page link -->
-        <a href="#treatoftheweek">Treat of the week</a>
+        <a href="#treatoftheweek" class="blue-link">Treat of the week</a>
         <!-- atricle of the page. Can be stand alone -->
         <article>
             <h2>Our Story</h2>
@@ -37,7 +39,16 @@
                 and he is the head barrista of the shop. Maria is the the pastry chef and is in charge of the big shop.
                 Celebrating their 10<sup>th</sup> year anniversary together in October 2023.
             </p>
+            <blockquote>We love all things coffee! <cite>- Faraz and Marie</cite></blockquote>
             <hr>
+            <section>
+                <h3>Ottawa</h3>
+                <p>
+                    We are a local coffee shop based in Ottawa. Our speciality is <b> organic-free trade</b> coffee.
+                </p>
+            </section>
+            <hr>
+        
         </article>
         <aside>
             <h3>Merchandise</h3>
@@ -61,9 +72,8 @@
         <!-- Adding a section for a description list  -->
         <section id="treatoftheweek">
 
-            <h3>Treat of the week</h3>
-
-            <dl>
+            <h3 class="white-text">Treat of the week</h3>
+            <dl class="white-text">
                 <dt>Name</dt>
                 <dd>Banana Bread</dd>
 
@@ -85,14 +95,14 @@
                 </dd>
             </dl>
             <!-- Adding an external link -->
-            <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank">Get the recipe</a>
+            <a href="https://www.allrecipes.com/recipe/20144/banana-banana-bread/" target="_blank" class="blue-link large-text">Get the recipe</a>
 
         </section>
           <!-- adding a section for menu table -->
             <section>
                 <h3>Menu Specials</h3>
 
-            <table border>
+            <table>
                 <thead>
                     <tr>
                         <th colspan="2">Items</th>
