@@ -1,0 +1,47 @@
+body {
+    font-family: helvetica, arial, sans-serif; 
+    color: darkslategray;
+    font-size: 18px;
+}
+
+header, footer {
+    background-color: #024959; 
+}
+
+.site-title {
+    color: white;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+.my-hobbies :nth-child(odd){
+    background-color: #F2E3D5;
+    list-style-type: square;
+}
+
+.my-hobbies {
+    list-style-type: square;
+}
+
+ nav ul{
+    list-style-type: none;
+}
+
+nav ul .current {
+    text-decoration: none;
+    border: 1px solid black;
+ }
+
+nav ul a {
+    color: white;
+    background-color: #3CA6A6;
+}
+
+nav ul a:hover {
+    background-color:#012E40 ;
+}
+nav ul a:focus {
+    background-color: aqua;
+}

@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML Assignment</title>
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 
 <body>
     <!-- Adding a header -->
     <header>
-        <h1>Faraz Ahmed</h1>
+        <h1 class="site-title">Faraz Ahmed </h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="notes.html">Notes</a></li>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="notes.html" class="current">Notes</a></li>
             </ul>
         </nav>
     </header>
-    <hr>
+    
     <main>
         <!-- Article section for About me and its paragraphs-->
         <article>
             <h2>About Me</h2>
-            <img src="Images/my-image.jpg" alt="An image of myself" width="439" height="585">
+            <img src="Images/my-image.png" alt="An image of myself" id="my-image">
             <p>
                 I am 22 years old and was born on December 5<sup>th</sup> , 2000, in <strong>Pakistan</strong>. I came
                 to Canada at the age of 20 and worked full-time for almost a year. After saving up a substantial amount,
@@ -31,11 +33,14 @@
             </p>
 
             <dl>
-                <dt>Hobbies</dt>
+                <dt><strong>Hobbies</strong></dt>
                 <dd>
-                    <ul>
-                        <li>1:64 diecast car collection</li>
+                    <ul class="my-hobbies">
                         <li>Photography</li>
+                        <li>Videography</li>
+                        <li>Gaming</li>
+                        <li>Parkour/Freerunning</li>
+                        <li>1:64 diecast car collection</li>
                     </ul>
                 </dd>
             </dl>
@@ -51,7 +56,7 @@
     </main>
     <hr>
     <!-- Site footer -->
-    <footer>
+    <footer class="site-title">
 
         &copy;Copyright Faraz Ahmed, 2023
 
