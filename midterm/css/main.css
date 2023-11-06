@@ -1,0 +1,119 @@
+/* adding a font family and giving the site a background color. */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #aad4cf;
+    margin-top: 0;
+}
+
+/* width for the site */
+.container {
+    max-width: 1200px;
+    background-color: rgb(206, 230, 230);
+    margin: 0 auto;
+
+}
+
+/* making the positon relative so it positions and sizes accordinf the browser size */
+.box-size {
+    position: relative;
+
+}
+
+/* Adding h1 on top of image. */
+h1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5vw;
+    font-weight: lighter;
+    color: white;
+}
+
+/* Adjusting images width to fit the screen. */
+img {
+    width: 100%;
+
+}
+
+/* Making an image float left with paragraph on the right. */
+.img1 {
+    width: 20%;
+    float: left;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* giving it a margin so the text below it doesnt the image doesnt come up */
+p {
+    margin-bottom: 60px;
+}
+
+/* Giving this section and border and spacing it evenly. */
+.learn-more {
+    border: 1px solid black;
+    padding: 1rem;
+    line-height: 25px;
+
+}
+
+/* Adjusting font sizes for headings. */
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+/* Placing a footer cleanly. */
+footer {
+    float: right;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* Making the button look cleaner. */
+button {
+    font-size: .75rem;
+    padding: .5rem;
+}
+
+/* Making the box bigger for text. */
+#fullname,
+#youremail,
+#message {
+    width: 100%;
+}
+
+article {
+    padding: .5rem;
+}
+
+/* Styling the nav bar */
+nav ul {
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+
+/* positong nav bar and giving them a  right border. */
+nav ul li {
+    font-size: 1.5rem;
+    display: inline-block;
+    text-align: center;
+    width: 31.5%;
+    border-right: 1px solid black;
+}
+
+/* removing underline and making the text black. */
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+/* removing the 3rd right border in nav */
+nav ul li:nth-child(3) {
+    border-right: none;
+}
