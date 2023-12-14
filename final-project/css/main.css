@@ -1,3 +1,251 @@
 .container {
-    font-family: 'Open Sans' , serif;
+    font-family: 'Open Sans' , sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #222;
+    padding: .7em;
+}
+
+.logo-container {
+    padding: 1em;
+    background-color: #c78c06;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+.main-nav {
+    text-align: center;
+}
+
+nav ul a {
+    color: #c78c06;
+    text-decoration: none;
+}
+
+nav ul li {
+    font-size: 1em;
+}
+
+/* LoVe HAte */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #c78c06;
+    color: inherit;
+}
+
+.intro {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.wel-background {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    height: auto;
+    background-image: url(../images/main-banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 20px .5em 20px;
+}
+/* To ensure font sizes are proportionate */
+/* https://www.modularscale.com/ */
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+p {
+    margin: .5em 20px;
+}
+
+h1 {
+    font-weight: 700;
+    line-height: 1.5em;
+    color: white;
+    margin: 20px;
+    padding-top: 1em;
+
+}
+
+.connect-with-us {
+    display: inline-block;
+    background-color: #c78c06;
+    padding: 2em;
+    margin: 20px;
+}
+
+.p1 {
+    color: white;
+    font-weight: 400;
+    font-size: .8em;
+    margin: 20px;
+}
+
+.img1 {
+    width: 100%;
+}
+
+.about-us {
+    background-color: #ffe6ac;
+    padding: 1em;
+}
+
+.card {
+    padding: 1em;
+}
+
+.all-cards {
+    background-color: #ffe6ac;
+}
+
+.button-link {
+    color: white;
+    display: inline-block;
+    background-color: #222;
+    padding: 2em;
+    margin: 20px;
+}
+
+.btn-color {
+    color: white;
+}
+
+.vision-info {
+    background-image: url(../images/vision.jpg);
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    color: white;
+    padding: 1em;
+}
+
+.our-vision {
+    background: url(../images/vision.jpg) no-repeat center bottom;
+    background-size: cover;
+    color: white;
+}
+
+.vision-btn {
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #c78c06;
+    padding: 2em;
+    margin: 20px;
+}
+
+.teams {
+    padding: 1em;
+}
+.all-teams {
+    background-color: #ffe6ac;
+}
+
+h3 {
+    margin: .5em 20px
+}
+
+h4 {
+    margin-top: 1em;
+    border-bottom: 2px solid #000;
+}
+
+.p2 {
+    padding-bottom: 2em;
+}
+
+h5 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c78c06;
+}
+
+.contact-us {
+    margin: 1em;
+}
+
+#fullname,
+#youremail,
+#message {
+    width: 100%;
+    margin: .5em 0em .5em 0;
+}
+
+#message {
+    height: 6em;
+}
+
+.min-margin {
+    margin: 1em 0em .5em 0em;
+}
+
+.button {
+    color: #c78c06;
+    font-size: 1.2em;
+    background-color: #222;
+    padding: 5px;
+}
+.table {
+    width: 100%;
+    border-collapse:collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.table th:nth-child(1) {
+    background-color:#ffe6ac
+}
+
+.table th:nth-child(2) {
+    background-color: #ffe6ac;
+}
+
+.site-footer {
+    color: #c78c06;
+    background-color: #222;
+    padding: 2em 0 .5em 0;
+}
+
+.unsplash-link {
+    color: #c78c06;
+    font-size: 1em;
+    text-decoration: underline;
 }
