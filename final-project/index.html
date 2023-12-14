@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
+    <!-- Font Link Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <!-- Icon links styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
 <!-- Starting the body of the website -->
 
@@ -38,7 +47,7 @@
                     quidem molestias soluta. Praesentium magnam consectetur ad vel quod exercitationem voluptatum ipsa
                     minima iste est!</p>
 
-                <a href="#">Connect with us &blacktriangleright;</a>
+                <a href="#">Connect with us</a><i class="fa-solid fa-caret-right"></i>
             </section>
             <section class="about-us">
                 <img src="images/about-us.jpg" alt="About us image">
@@ -62,7 +71,7 @@
                         vitae
                         corrupti mollitia ut, commodi veniam laboriosam nesciunt impedit nihil dicta pariatur ipsam
                         accusantium? Iusto, libero dolores?</p>
-                    <a href="#">Digital Plans &blacktriangleright;</a>
+                    <a href="#">Digital Plans</a> <i class="fa-solid fa-caret-right"></i>
                 </div>
                 <div class="card card-2">
                     <img src="images/marketing.jpg" alt="Marketing laptop image">
@@ -71,7 +80,7 @@
                         asperiores quo perspiciatis, adipisci fugiat libero obcaecati, fugit consequuntur distinctio
                         facere
                         illo numquam aut ex sapiente doloremque ut!</p>
-                    <a href="#">Marketing plans &blacktriangleright;</a>
+                    <a href="#">Marketing plans</a> <i class="fa-solid fa-caret-right"></i>
                 </div>
                 <div class="card card-3">
                     <img src="images/video.jpg" alt="Phone playing a video image">
@@ -81,7 +90,7 @@
                         nesciunt aliquam, similique sunt inventore vel incidunt expedita debitis neque cupiditate,
                         beatae id
                         obcaecati.</p>
-                    <a href="#">Video plans &blacktriangleright;</a>
+                    <a href="#">Video plans</a> <i class="fa-solid fa-caret-right"></i>
                 </div>
                 <div class="card card-4">
                     <img src="images/web.jpg" alt="Phone with web image">
@@ -89,7 +98,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, mollitia cupiditate. Aperiam
                         iure voluptatem cum rerum enim voluptatum numquam, veritatis cumque, unde esse ducimus, at
                         blanditiis id laudantium laborum repudiandae?</p>
-                    <a href="#">Web Plans &blacktriangleright;</a>
+                    <a href="#">Web Plans</a> <i class="fa-solid fa-caret-right"></i>
                 </div>
                 <div class="card card-5">
                     <img src="images/print.jpg" alt="print image">
@@ -98,7 +107,7 @@
                         nesciunt nobis ut accusamus hic eaque numquam ab eius animi similique, odio architecto quos
                         harum,
                         commodi a!</p>
-                    <a href="#">Print plans &blacktriangleright;</a>
+                    <a href="#">Print plans</a> <i class="fa-solid fa-caret-right"></i>
                 </div>
             </section>
             <!-- Giving this a class to add a background image that expands more than 1200 pixels -->
@@ -108,7 +117,7 @@
                     inventore
                     distinctio quibusdam, cum accusamus quidem laudantium maxime nobis, adipisci ea quasi tenetur nisi,
                     expedita non exercitationem iure.</p>
-                <a href="#">Learn more &blacktriangleright;</a>
+                <a href="#">Learn more</a> <i class="fa-solid fa-caret-right"></i>
             </section>
             <!-- similar to the cards. giving a whole section a class as team and then individual numbered classes to position them accordingly -->
             <section class="team">
@@ -186,11 +195,13 @@
                 <!-- embedding google maps into the image -->
                 <div class="location-map">
                     <h3>Location</h3>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Empire+State+Building,New+York,NY"
-                        target="_blank">
-                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Empire+State+Building,New+York,NY&zoom=15&size=400x300&key=YOUR_API_KEY"
-                            alt="Google Map">
-                    </a>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.8902600908!2d-76.119899845876!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1702535700823!5m2!1sen!2sca"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
 
                 </div>
             </section>
