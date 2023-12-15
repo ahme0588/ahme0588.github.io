@@ -28,14 +28,16 @@
             <nav class="main-nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li class="search-nav">
+                    <li><a href="#aboutus">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li>
                         <form action="search" method="get"></form>
-                        <input type="text" id="search" name="search" placeholder="search">
-                        <button type="submit" class="button">search</button>
+                        <div class="search-form">
+                            <input type="text" id="search" name="search" placeholder="search">
+                            <button class="submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
                     </li>
                 </ul>
             </nav>
@@ -55,7 +57,7 @@
                         </div>
                     </section>
                 </div>
-                <div class="about-us">
+                <div class="about-us" id="aboutus">
                         <section>
                         <img src="images/about-us.jpg" alt="About us image" class="img1">
                         <h2>About Us</h2>
@@ -70,7 +72,7 @@
                             </section>
                         </div>
             <!-- Adding a section with a class of card for the whole section and making more divs and giving them a class of cards to rearrange in css. -->
-            <section class="cards">
+            <section class="cards" id="services">
                 <h2>Our Services</h2>
                 <div class="card card-1">
                     <div class="all-cards">
@@ -155,7 +157,7 @@
                     </div>
             </section>
             <!-- similar to the cards. giving a whole section a class as team and then individual numbered classes to position them accordingly -->
-            <section class="team">
+            <section class="team" id="team">
                 <h2>Our Team</h2>
                 <div class="teams">
                     <div class="all-teams">
@@ -190,7 +192,7 @@
                     </div>
                     </section>
                     <!-- Adding the contacts section with classes to rearrange them in css for desktop version -->
-                    <section class="contact-us">
+                    <section class="contact-us" id="contact">
                         <h2 class="min-margin">Contact Us</h2>
                         <div class="message">
 
@@ -243,7 +245,7 @@
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.8902600908!2d-76.119899845876!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1702535700823!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="full-width-map"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>

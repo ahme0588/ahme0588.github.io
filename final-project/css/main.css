@@ -47,6 +47,25 @@ nav ul li {
     color: inherit;
 }
 
+.submit {
+    background-color: #100C08;
+    border: 1px solid #C68D00;
+    color: #C68D00;
+}
+
+.submit {
+    padding: 8px;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+}
+.search-form input {
+    flex: 1;
+    padding: 8px;
+}
+
 .intro {
     background-color: rgba(0, 0, 0, 0.6);
 }
@@ -248,4 +267,8 @@ h5 {
     color: #c78c06;
     font-size: 1em;
     text-decoration: underline;
+}
+
+.full-width-map {
+    width: 100%;
 }
