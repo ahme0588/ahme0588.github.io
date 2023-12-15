@@ -8,7 +8,9 @@
     <!-- Font Link Styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"
+        rel="stylesheet">
     <!-- Icon links styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Custom Style Sheet -->
@@ -20,145 +22,163 @@
 <body>
     <!-- Giving it a class to make it 1200px in css -->
     <div class="container">
-        <header>
-            <div class="logo-container">
-                <a href="index.html" class="star-logo"><img src="images/logo.png" alt="Star Logo"></a>
+        <header class="desktop-nav">
+            <div class="nav-container">
+
+                <div class="logo-container">
+                    <a href="index.html" class="star-logo"><img src="images/logo.png" alt="Star Logo"></a>
+                </div>
+                <!-- Adding the nav bar with search box -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="current">Home</a></li>
+                        <li><a href="#aboutus">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <!-- Search box -->
+                        <li>
+                            <form action="search" method="get"></form>
+                            <div class="search-form">
+                                <input type="text" id="search" name="search" placeholder="search">
+                                <button class="submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <!-- Adding the nav bar with search box -->
-            <nav class="main-nav">
-                <ul class="nav-list">
-                    <li><a href="index.html" class="current">Home</a></li>
-                    <li><a href="#aboutus">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li>
-                        <form action="search" method="get"></form>
-                        <div class="search-form">
-                            <input type="text" id="search" name="search" placeholder="search">
-                            <button class="submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
         </header>
         <!-- Adding the main content -->
         <main class="content">
             <div class="wel-background">
                 <section class="intro">
                     <h1>Welcome to Three Star Media</h1>
-                    <p class="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus ut unde, reiciendis ex
+                    <p class="p1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum possimus ut unde,
+                        reiciendis ex
                         maxime
-                        quidem molestias soluta. Praesentium magnam consectetur ad vel quod exercitationem voluptatum ipsa
+                        quidem molestias soluta. Praesentium magnam consectetur ad vel quod exercitationem voluptatum
+                        ipsa
                         minima iste est!</p>
-                        
-                        <div class="connect-with-us">
-                            <a href="#">Connect with us </a><i class="fa-solid fa-caret-right"></i>
-                        </div>
-                    </section>
-                </div>
-                <div class="about-us" id="aboutus">
-                        <section>
+                        <!-- Adding a button with an id that links to that section -->
+                    <div class="connect-with-us">
+                        <a href="#">Connect with us </a><i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </section>
+            </div>
+            <!-- Adding the about us section. -->
+            <section class="about-us1">
+                    <div class="about-us" id="aboutus">
+                    <div class="aboutus-image">
                         <img src="images/about-us.jpg" alt="About us image" class="img1">
+                    </div>
+                    <div class="aboutus-content">
                         <h2>About Us</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis minima eum expedita vero
-                            nesciunt voluptatibus adipisci. Praesentium, fugiat animi? Aperiam qui dicta dolorem voluptatum ad
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nobis minima eum expedita
+                            vero
+                            nesciunt voluptatibus adipisci. Praesentium, fugiat animi? Aperiam qui dicta dolorem
+                            voluptatum ad
                             recusandae earum nisi impedit?</p>
-                            
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ducimus eum quisquam inventore
-                                voluptates reiciendis obcaecati, voluptatibus nostrum autem amet quod! Quis consequatur quas est
-                                eveniet
-                                nesciunt impedit possimus modi?</p>
-                            </section>
-                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ducimus eum quisquam
+                            inventore
+                            voluptates reiciendis obcaecati, voluptatibus nostrum autem amet quod! Quis consequatur quas
+                            est
+                            eveniet
+                            nesciunt impedit possimus modi?</p>
+                    </div>
+                </div>
+                </section>
             <!-- Adding a section with a class of card for the whole section and making more divs and giving them a class of cards to rearrange in css. -->
             <section class="cards" id="services">
-                <h2>Our Services</h2>
+                <div class="card-0">
+                    <h2>Our Services</h2>
+                </div>
                 <div class="card card-1">
                     <div class="all-cards">
-                    <img src="images/digital.jpg" alt="digital image" class="img1">
+                        <img src="images/digital.jpg" alt="digital image" class="img1">
                         <h3>Digital Transformation</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga optio, harum, odit voluptatibus
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga optio, harum, odit
+                            voluptatibus
                             vitae
                             corrupti mollitia ut, commodi veniam laboriosam nesciunt impedit nihil dicta pariatur ipsam
-                            accusantium? Iusto, libero dolores?</p>
-                            <div class="button-link">
-                                <a href="#" class="btn-color">Digital Plans</a> <i class="fa-solid fa-caret-right"></i>
-                            </div>
+                            accusantium? Iusto, libero dolores? Lorem ipsum dolor sit amet </p>
+                        <div class="button-link">
+                            <a href="#" class="btn-color">Digital Plans</a> <i class="fa-solid fa-caret-right"></i>
                         </div>
+                    </div>
                 </div>
                 <div class="card card-2">
                     <div class="all-cards">
-
                         <img src="images/marketing.jpg" alt="Marketing laptop image" class="img1">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum officiis praesentium atque
                             asperiores quo perspiciatis, adipisci fugiat libero obcaecati, fugit consequuntur distinctio
-                            facere
-                            illo numquam aut ex sapiente doloremque ut!</p>
-                            <div class="button-link">
-                                <a href="#" class="btn-color">Marketing plans</a> <i class="fa-solid fa-caret-right"></i>
-                            </div>
+                            facere  Lorem ipsum dolor sit amet
+                            illo numqua</p>
+                        <div class="button-link">
+                            <a href="#" class="btn-color">Marketing plans</a> <i class="fa-solid fa-caret-right"></i>
                         </div>
-                  </div>
+                    </div>
+                </div>
                 <div class="card card-3">
                     <div class="all-cards">
                         <img src="images/video.jpg" alt="Phone playing a video image" class="img1">
                         <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eius rem reiciendis in iusto! At
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eius rem reiciendis in iusto!
+                            At
                             minus
                             nesciunt aliquam, similique sunt inventore vel incidunt expedita debitis neque cupiditate,
                             beatae id
                             obcaecati.</p>
-                            <div class="button-link">
-                                <a href="#" class="btn-color">Video plans</a> <i class="fa-solid fa-caret-right"></i>
-                            </div>
+                        <div class="button-link">
+                            <a href="#" class="btn-color">Video plans</a> <i class="fa-solid fa-caret-right"></i>
                         </div>
+                    </div>
                 </div>
                 <div class="card card-4">
                     <div class="all-cards">
                         <img src="images/web.jpg" alt="Phone with web image" class="img1">
                         <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, mollitia cupiditate. Aperiam
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, mollitia cupiditate.
+                            Aperiam
                             iure voluptatem cum rerum enim voluptatum numquam, veritatis cumque, unde esse ducimus, at
-                            blanditiis id laudantium laborum repudiandae?</p>
-                            <div class="button-link">
-                                <a href="#" class="btn-color">Web Plans</a> <i class="fa-solid fa-caret-right"></i>
-                            </div>
+                        </p>
+                        <div class="button-link">
+                            <a href="#" class="btn-color">Web Plans</a> <i class="fa-solid fa-caret-right"></i>
                         </div>
+                    </div>
                 </div>
                 <div class="card card-5">
                     <div class="all-cards">
                         <img src="images/print.jpg" alt="print image" class="img1">
                         <h3>Print</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto expedita vitae maiores possimus
-                            nesciunt nobis ut accusamus hic eaque numquam ab eius animi similique, odio architecto quos
-                            harum,
-                            commodi a!</p>
-                            <div class="button-link">
-                                <a href="#" class="btn-color">Print plans</a> <i class="fa-solid fa-caret-right"></i>
-                            </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto expedita vitae maiores
+                            possimus
+                            nesciunt nobis ut hic eaque numquam ab eius animi similique, odio architecto quos
+
+                        </p>
+                        <div class="button-link">
+                            <a href="#" class="btn-color">Print plans</a> <i class="fa-solid fa-caret-right"></i>
                         </div>
+                    </div>
                 </div>
             </section>
             <!-- Giving this a class to add a background image that expands more than 1200 pixels -->
-            
+
             <section class="our-vision">
                 <div class="vision-info">
-
                     <h2>Our Vision</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam obcaecati repudiandae vitae
                         inventore
-                        distinctio quibusdam, cum accusamus quidem laudantium maxime nobis, adipisci ea quasi tenetur nisi,
-                        expedita non exercitationem iure.</p>
-                        <div class="vision-btn">
-                            <a href="#" class="btn-color">Learn more</a> <i class="fa-solid fa-caret-right"></i>
-                        </div>
+                        distinctio quibusdam, cum accusamus quidem laudantium maxime nobis, adipisci .</p>
+                    <div class="vision-btn">
+                        <a href="#" class="btn-color">Learn more</a> <i class="fa-solid fa-caret-right"></i>
                     </div>
+                </div>
             </section>
             <!-- similar to the cards. giving a whole section a class as team and then individual numbered classes to position them accordingly -->
             <section class="team" id="team">
-                <h2>Our Team</h2>
+                <h2 class="team0">Our Team</h2>
                 <div class="teams">
                     <div class="all-teams">
 
@@ -166,37 +186,40 @@
                         <div class="team2">
                             <h3>John Doe</h3>
                             <h5>CEO and Co-owner</h5>
-                            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum iusto quo error incidunt
+                            <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum iusto quo
+                                error incidunt
                                 distinctio. Nam ex, dolores tempora itaque ut velit consequatur soluta repudiandae non
                                 repellendus
                                 sed mollitia labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="teams">
+                        <div class="all-teams">
+                            <img src="images/bob.jpg" alt="image of bob" class=" img1 team3">
+                            <div class="team4">
+                                <h3>Bob Rite</h3>
+
+                                <h5>CFO and Co-owner</h5>
+                                <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nisi natus
+                                    laboriosam animi
+                                    fugit
+                                    earum deserunt aliquid eius vitae necessitatibus, asperiores vero suscipit iure
+                                    cumque iusto
+                                    nobis
+                                    assumenda, obcaecati quisquam?</p>
                             </div>
                         </div>
                     </div>
-                        <div>
-                            <div class="teams">
-                                <div class="all-teams">
-                    <img src="images/bob.jpg" alt="image of bob" class=" img1 team3">
-                    <div class="team4">
-                        <h3>Bob Rite</h3>
+                </div>
+            </section>
+            <!-- Adding the contacts section with classes to rearrange them in css for desktop version -->
+            <section class="contact-us" id="contact">
+                <h2 class="min-margin contact">Contact Us</h2>
+                <div class="message">
 
-                            <h5>CFO and Co-owner</h5>
-                            <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga nisi natus laboriosam animi
-                                fugit
-                                earum deserunt aliquid eius vitae necessitatibus, asperiores vero suscipit iure cumque iusto
-                                nobis
-                                assumenda, obcaecati quisquam?</p>
-                            </div>
-                                </div>
-                        </div>
-                    </div>
-                    </section>
-                    <!-- Adding the contacts section with classes to rearrange them in css for desktop version -->
-                    <section class="contact-us" id="contact">
-                        <h2 class="min-margin">Contact Us</h2>
-                        <div class="message">
-
-                    <h3 class="min-margin">Send us a message</h3>
+                    <h3 class="min-margin send-us">Send us a message</h3>
                     <form action="thanks.html" method="post">
                         <div>
                             <label for="fullname">Full Name</label>
@@ -245,8 +268,8 @@
                     <div class="map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358904.8902600908!2d-76.119899845876!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1702535700823!5m2!1sen!2sca"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" class="full-width-map"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            class="full-width-map" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </section>
@@ -254,8 +277,10 @@
         </main>
         <!-- Finishing the main content and adding a footer -->
         <footer class="site-footer">
-            <p class="p2">&copy; Copyright Three Star Media,2020 </p> 
-           <p> All Images are taken from <a href="Unsplash" class="unsplash-link">Unsplash</a> </p>
+            <div class="footer1000">
+                <p class="p2">&copy; Copyright Three Star Media,2020 </p>
+                <p> All Images are taken from <a href="Unsplash" class="unsplash-link">Unsplash</a> </p>
+            </div>
         </footer>
     </div>
 </body>
